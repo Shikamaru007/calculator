@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Calculator</title>
 </head>
+
 <body>
+
+    <div id="calculator">
+        <input id="display" disabled>
+        <div id="keys">
+            <button onclick="btn(`+`)" class="operator">+</button>
+            <button onclick="btn(`7`)">7</button>
+            <button onclick="btn(`8`)">8</button>
+            <button onclick="btn(`9`)">9</button>
+            <button onclick="btn(`-`)" class="operator">-</button>
+            <button onclick="btn(`4`)">4</button>
+            <button onclick="btn(`5`)">5</button>
+            <button onclick="btn(`6`)">6</button>
+            <button onclick="btn(`*`)" class="operator">*</button>
+            <button onclick="btn(`1`)">1</button>
+            <button onclick="btn(`2`)">2</button>
+            <button onclick="btn(`3`)">3</button>
+            <button onclick="btn(`/`)" class="operator">/</button>
+            <button onclick="btn(`0`)">0</button>
+            <button onclick="btn(`.`)">.</button>
+            <button onclick="calculate()">=</button>
+            <button id="clear" class="operator">C</button>
+        </div>
+    </div>
+
+
+
+
     <script src="index.js"></script>
 </body>
+
 </html>
